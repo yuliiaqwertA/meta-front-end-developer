@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,14 +16,13 @@
  </head>
  <body>
  	<header>
- 		<img src="logo.png">
- 		
+ 		<img src="/Users/admin/meta-front-end-developer/Course4/Files/home/coder/project/logo.png">
  	</header>
  	<nav>
  		<ul>
  			<li><a href="index.html">Home</a></li>
- 			<li><a href="location.html">Location</a></li>
- 			<li><a href="blog.html">Blog</a></li>
+ 			<li><a href="#location.html">Location</a></li>
+ 			<li><a href="#blog.html">Blog</a></li>
  			
  		</ul>
  	
@@ -57,6 +55,23 @@
  			</div>
 
  		</form>
+
+
+        <h1>Book a Table</h1>
+        <form method="POST">
+            <fieldset id="size">
+            <input type="radio" value="2" name="size"> 2-person table
+            <input type="radio" value="4" name="size" checked> 4-person table
+            <input type="radio" value="6" name="size"> 6-person table
+        </fieldset>
+        <fieldset id="location">
+
+           <input type="radio" value="indors" name="location" checked> Indors 
+           <input type="radio" value="outdors" name="location"> Outdors
+        </fieldset>
+        <button type="submit">Book table</button>
+    </form>
+
  	</main>
  	<footer>
  		<p>Copyright Little Lemon</p>
