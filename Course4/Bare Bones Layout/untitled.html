@@ -56,13 +56,42 @@
 
  		</form>
 
+<h1>Book a Table</h1>
+<form method="POST">
+   
+            <div>
+                <label for="booking_date">Booking Date</label>
+                <input type="date" id="booking_date" name="booking_date">
+            </div>
+            <div>
+                <label for="booking_people">Number of People</label>
+                <input type="range" id="booking_people" name="booking_people" min="1" max="10" value="4" oninput="this.nextElementSibling.value = this.value">
+                <output>4</output>
+            </div>
+            <div>
+                <label for="booking_location">Location</label>
+                <input id="booking_location" name="booking_location" list="locations">
+                <datalist id="locations">
+                  <option value="Downtown"></option>
+                  <option value="Uptoun"></option></datalist>
+            </div>
+       
+</form>
+
+
 
         <h1>Book a Table</h1>
         <form method="POST">
             <fieldset id="size">
-            <input type="radio" value="2" name="size"> 2-person table
-            <input type="radio" value="4" name="size" checked> 4-person table
-            <input type="radio" value="6" name="size"> 6-person table
+                
+            <input type="radio" value="2" name="size">
+            <label for="2-person_table">2-person table</label>
+
+            <input type="radio" value="4" name="size" checked>
+            <label for="4-person_table">4-person table</label>
+
+            <input type="radio" value="6" name="size">
+            <label for="6-person_table"> 6-person table</label>
         </fieldset>
         <fieldset id="location">
 
