@@ -1,32 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta charset="utf-8">
     <title>Little Lemon</title>
-    
 
-    <meta property="og:title" content="Our Menu">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="logo.png">
-    <meta property="og:url" content="http://littlelemon">
-    <meta property="og:description" content="Little Lemon is a famyly-owned resturant, focused on traditional recipies served width a modern twist.">
-    <meta property="og:locale" content="en_US">
-    <meta property="og:site_name" content="Little Lemon">
-
-    <link rel="stylesheet" href="styles.css">
+    <link href="styles.css" rel="stylesheet"/>
  </head>
  <body>
  	<header>
- 		<img src="/Users/admin/meta-front-end-developer/Course4/Files/home/coder/project/logo.png">
+        <img src="/Users/admin/meta-front-end-developer/Course4/Files/home/coder/project/logo.png">
  	</header>
  	<nav>
  		<ul>
  			<li><a href="index.html">Home</a></li>
  			<li><a href="#location.html">Location</a></li>
- 			<li><a href="#blog.html">Blog</a></li>
- 			
+ 			<li><a href="#blog.html">Blog</a></li>	
  		</ul>
- 	
  	</nav>
+    <main>
+        <h1>About</h1>
+        <video width="320" height="240" controls muted> 
+            <source src="video.mp4" type="video/mp4">
+        </video>
+        <p>Little Lemon is a family-owned Mediterranean restaurant, focused on traditional...</p>
+        <audio loop controls>
+            <source src="music.ogg" type="audio/ogg">
+        </audio>
+    </main>
  	<main>
  		<h1>Sign Up</h1>
  		<form>
@@ -47,7 +48,8 @@
  				<input type="password" id="user_password" name="user_password">
  			</div>
  			<div>
- 				<label for="user_confirm_password">Confirm Password</label><br>
+ 			 
+             <label for="user_confirm_password">Confirm Password<label><br>
  				<input type="password" id="user_confirm_password" name="user_confirm_password">
  			</div>
  			<div>
