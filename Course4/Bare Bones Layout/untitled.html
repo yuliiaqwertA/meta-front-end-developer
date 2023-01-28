@@ -18,6 +18,19 @@
  			<li><a href="#blog.html">Blog</a></li>	
  		</ul>
  	</nav>
+
+    <main>
+        <iframe src="placeholder.png" width="320" height="128" sandbox allow="payment 'none'; camera 'none'; microphone 'none'"></iframe>
+        <h1>Blog</h1>
+        <article>
+            <h2>20% off this weekend</h2>
+            <p>Come down to Little Lemon and your meal will be 20% off!</p>
+        </article>
+        <article>
+            <h2>Our new menu</h2>
+            <p>We've updated our menu with new dinners.</p>
+        </article>
+    </main>
     <main>
         <h1>About</h1>
         <video width="320" height="240" controls muted> 
@@ -27,6 +40,20 @@
         <audio loop controls>
             <source src="music.ogg" type="audio/ogg">
         </audio>
+        <form>
+    <div>
+      <label for="rating">Rating</label>
+      <input type="range" min="1" max="5" id="rating" name="rating" list="ratings">
+      <datalist id="ratings">
+          <option value="1" label="1"></option>
+          <option value="2 checked"></option>
+          <option value="3"></option>
+          <option value="4"></option>
+          <option value="5" label="5"></option>
+      </datalist>
+    </div>
+    <button type="submit">Submit Rating</button>
+  </form>
     </main>
  	<main>
  		<h1>Sign Up</h1>
