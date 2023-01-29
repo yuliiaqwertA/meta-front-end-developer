@@ -1,49 +1,27 @@
-.box{
-    background-color: aquamarine;
-    border-radius: 20px;
-    margin: 20px;
-    padding: 50px;
-    width: 90px;
 
-
-}
-
-.flex-container{ 
+.columns{
     display: flex;
-    gap:30px;
-    row-gap: 55px;
-    column-gap: 23px;
-    flex-wrap: wrap;
+    height: 400px;
+    max-width: 300px;
+    align-items: stretch;
+    border: 1px solid rgb(0, 0, 0);
+}
 
+.container{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-end;
+}
 
+.bar{
+    border-right: 1px solid white;
 }
-.box1{
-    background-color: black;
-    color: white;
-    flex-grow: 1;
-    }
 
-.box2{
-    background-color: red;
-    order: 6;
-
+.famale{
+    background: #F4CE14;
 }
-.box3{
-    background-color: blanchedalmond;
-
-    
-}
-.box4{
-    background-color: violet;
-}
-.box5{
-    background-color: blue;
-    flex-shrink: 2;
-}
-.box6{
-    background-color: gray;
-    flex-grow: 2;
-}
-.box7{
-    background-color: gold;
+.male{
+    background: #495E57;
 }
