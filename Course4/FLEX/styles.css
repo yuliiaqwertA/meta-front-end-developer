@@ -1,57 +1,48 @@
+
+
 body {
     margin: 20px;
+
 }
 .box {
     background-color: #247;
     color: black;
-    margin: 10px;
-    margin-right: 20px;
+    
     padding: 30px;
     border-radius: 10px;
     font-size: 100%;
 
 }
 .container {
-    display: grid;
-    width: 100%;
-    height: 500px;
-    grid-template-columns: 50px 100px 50px;
-    grid-template-rows: 50px 50px 100px;
-    grid-template-areas:  
     
-    "b b a"
-    
-    "b b c"
-    "b b d"
-    "b b e";
+   display: grid;
+  grid-template-columns: 60px 60px  ;
+  grid-template-rows: 30px 30px  ;
+  grid-template-areas:
+  "item-a item-a"
+  "item-b item-b"
+  "item-c item-d"
+  ". item-e";
 
-    grid-gap: 15px;
-    background-color: rgb(202, 96, 96);
+  background-color: rgb(202, 96, 96);
 }
 
-.container > .a {
-    grid-area: a;
+.item-a {
     background-color: red;
-
-}
-.container > .b {
-    grid-area: b;
-    background-color: beige;
+    justify-self: end;
+  
 }
 
-.container > .c {
-    grid-area: c;
+.item-b {
     background-color: blue;
-    
 }
-.container > .d {
-    grid-area: d;
+.item-c {
     background-color: gold;
-    
 }
-.container > .e {
-    grid-area: e;
-    background-color: pink;
-    padding: 100px;
-   
+.item-d {
+    background-color: violet;
+}
+.item-e {
+    background-color: brown;
+  
 }
