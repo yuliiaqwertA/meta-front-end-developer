@@ -1,48 +1,34 @@
-
-
-body {
-    margin: 20px;
+.parent {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+} 
+.segment {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    grid-template-rows: 100px;
+}
+.twelve {
+    background-color: lightseagreen;
+    grid-column: 1/ span 12;
 
 }
-.box {
-    background-color: #247;
-    color: black;
-    
-    padding: 30px;
-    border-radius: 10px;
-    font-size: 100%;
+.eight {
+    background-color: beige;
+    grid-column: 5/ span 8;
 
 }
-.container {
-    
-   display: grid;
-  grid-template-columns: 60px 60px  ;
-  grid-template-rows: 30px 30px  ;
-  grid-template-areas:
-  "item-a item-a"
-  "item-b item-b"
-  "item-c item-d"
-  ". item-e";
-
-  background-color: rgb(202, 96, 96);
+.four {
+ background-color: lightblue;
+    grid-column: 1/ grid 4;
 }
 
-.item-a {
-    background-color: red;
-    justify-self: end;
-  
-}
+.six {
+    background-color: lightsteelblue;
+    grid-column: 5/ span 6;
 
-.item-b {
-    background-color: blue;
 }
-.item-c {
-    background-color: gold;
-}
-.item-d {
-    background-color: violet;
-}
-.item-e {
-    background-color: brown;
-  
+.seven {
+    background-color: lightcoral;
+    grid-column: 3/ span 7;
 }
