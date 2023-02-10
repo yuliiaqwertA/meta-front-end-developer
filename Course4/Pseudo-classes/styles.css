@@ -2,7 +2,7 @@ li::first-letter {
 
 color:coral; 
 
-font-size: 2.3em; 
+font-size: 1.3em; 
 
 font-weight: bold; 
 
@@ -19,20 +19,15 @@ li::first-line {
     line-height: 1;
 }
 
-li::selection {
-    color:brown;
-    background-color: gold;
-    line-height: 1;
-}
 li::marker {
     color: cornflowerblue;
-    content: '#!& ';
+    content: '<> ';
     font-size: 1.1em;
 }
 
 #tips::before{
-    background: brown;
-    color:pink;
+    background: darkkhaki;
+    color:darkslategray;
     content: "Tip:";
     padding-left: 3px;
     padding-right: 5px;
@@ -46,4 +41,6 @@ li::marker {
     padding-right: 5px;
     border-radius: 20%;
 }
-
+p[rel="slice"] {
+    color: pink;
+}
