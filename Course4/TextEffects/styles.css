@@ -1,17 +1,43 @@
-.box {
-    display: grid;
-    width: 240px;
-    height: 240px;
-    margin: 100px;
-    background-color: rgba(55, 255, 5, 0.5);
-    border-radius: 12px;
-    border: solid #6feb6f 4px;
-
+* {
+    padding: 0;
+    margin: 0;
+    color: pink;
+}
+container {
+    min-height: 100vh;
+    background-color:bisque;
+}
+  
+.letters {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    text-transform:uppercase;
+    font-size: 60px;
+    text-align: center; 
 }
 
-.box:hover {
-    transform: rotateZ(60deg);
-    background-color: lightcoral;
-    opacity: 50%;
-    transition: 10s;
+p {
+    text-align: center;
+    background-color: rgb(250, 150, 100);
+    width: 70px;
+    margin-right: 1.5px;
+    border-radius: 15%;
+    border-color: rgb(250, 125, 75);
+    border-style: solid;
+}
+
+.z:hover {
+    transform: rotateZ(360deg);
+    transition: 3s;
+}
+.X:hover {
+    transform: rotateX(360deg);
+    transition: 3s;
+}
+.y:hover {
+    transform: rotate3d(2, 1, 4, 360deg);
+    transition: 5s;
+
 }
