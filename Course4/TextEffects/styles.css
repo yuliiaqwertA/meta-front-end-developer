@@ -1,43 +1,35 @@
-* {
-    padding: 0;
-    margin: 0;
-    color: pink;
-}
-container {
-    min-height: 100vh;
-    background-color:bisque;
-}
-  
-.letters {
-    display: flex;
-    justify-content: center;
-    padding-top: 20px;
-    margin-bottom: 20px;
-    text-transform:uppercase;
-    font-size: 60px;
-    text-align: center; 
+
+body{ 
+
+padding: 30px;} 
+
+ 
+
+.box{ 
+
+background-color: lightcoral; 
+border-radius: 90px;
+
+width: 50px; 
+
+height: 50px; 
+
+animation: myanimation 3s infinite ease-in; 
+
+} 
+
+ 
+
+@keyframes myanimation{ 
+
+from{width: 50px; 
+
+} 
+
+ 50%{background-color: aquamarine;
+    height: 20px;
 }
 
-p {
-    text-align: center;
-    background-color: rgb(250, 150, 100);
-    width: 70px;
-    margin-right: 1.5px;
-    border-radius: 15%;
-    border-color: rgb(250, 125, 75);
-    border-style: solid;
-}
+to{width: 100px; 
 
-.z:hover {
-    transform: rotateZ(360deg);
-    transition: 3s;
-}
-.X:hover {
-    transform: rotateX(360deg);
-    transition: 3s;
-}
-.y:hover {
-    transform: rotate3d(2, 1, 4, 360deg);
-    transition: 5s;
-
-}
+} 
