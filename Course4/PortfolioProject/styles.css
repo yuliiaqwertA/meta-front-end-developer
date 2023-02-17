@@ -1,0 +1,43 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+
+header {
+	background-color: skyblue;
+	display: flex;
+	justify-content: space-between;
+}
+
+header img {
+	background-color: pink;
+	width: auto;
+	height: 2em;
+}
+
+nav ul {
+	display: flex;
+	list-style-type: none;
+	background-color: red;
+ 	height: 3em;
+}
+ 
+ a {
+ 	color: black;
+ 	padding: 8px;
+ 	
+
+ }
+
+.main-container {
+
+background-color: beige;
+	
+}
+
+footer {
+	background-color: lightyellow;
+}
